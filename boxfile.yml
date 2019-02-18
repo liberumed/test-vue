@@ -1,0 +1,15 @@
+run.config:
+  engine: nodejs
+  engine.config:
+    runtime: nodejs-9.11.1
+    dep_manager: yarn
+
+  cache_dirs:
+    - node_modules
+
+  extra_path_dirs:
+    - node_modules/.bin
+
+    # run yarn
+  extra_steps:
+    - yarn
